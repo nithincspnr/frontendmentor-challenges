@@ -7,4 +7,4 @@ The [challenge](https://www.frontendmentor.io/challenges/qr-code-component-iux_s
 
 ## Demo
 
-The project is hosted on GitHub pages, here is the [url](https://pages.github.com/)
+The project is hosted on GitHub pages, here is the [url](https://nithincspnr.github.io/frontendmentor-challenges/qr-code-component/)
