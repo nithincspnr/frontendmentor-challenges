@@ -1,0 +1,98 @@
+/* 
+Layout
+The designs were created to the following widths:
+
+Mobile: 375px
+Desktop: 1440px
+Colors
+White: hsl(0, 0%, 100%)
+Light gray: hsl(212, 45%, 89%)
+Grayish blue: hsl(220, 15%, 55%)
+Dark blue: hsl(218, 44%, 22%)
+Typography
+Body Copy
+Font size (paragraph): 15px
+Font
+Family: Outfit
+Weights: 400, 700
+*/
+
+/* Global styles */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*::after {
+    box-sizing: inherit;
+}
+
+h3,
+p,
+body,
+main {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+
+}
+
+/* main */
+main {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #D5E1EF;
+}
+
+.card {
+    width: 320px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.0476518);
+}
+
+.qr-code-img {
+    margin: 16px;
+    border-radius: 10px;
+    width: 288px;
+}
+
+.content {
+    margin: 8px 16px 40px 16px;
+}
+
+.content h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1F314F;
+    line-height: 28px;
+    font-style: normal;
+    text-align: center;
+}
+
+.content p {
+    font-size: 15px;
+    color: #7D889E;
+    font-weight: 400;
+    line-height: 19px;
+    font-style: normal;
+    text-align: center;
+    margin: 16px;
+    letter-spacing: 0.1875px;
+}
+
+/* Footer */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
