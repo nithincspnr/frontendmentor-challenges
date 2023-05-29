@@ -10,6 +10,7 @@ html {
 
 h1,
 p,
+h2,
 body,
 main {
     padding: 0;
@@ -96,29 +97,60 @@ h1 {
 
 /* content */
 .main-content {
-    padding: 59px 20px 120px;
     display: flex;
+    gap: 40px;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 20px;
     text-align: center;
+    padding: 59px 20px 120px;
 }
+
 
 .content-wrapper {
-    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.07);
     border-radius: 16px;
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.07);
 }
 
+.main-content .title {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Poppins',
+        sans-serif;
+}
 
+.content {
+    margin: 16px 40px 33px;
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(208, 11%, 55%);
+    font-family: 'Open Sans',
+        sans-serif;
+    min-width: 256px;
+}
 
-.content-image {
+.grow-together-img {
     width: 236px;
     height: 194px;
+    margin: 56px auto 54px;
+}
+
+.flowing-conversation-img {
+    width: 243.74px;
+    height: 172.8px;
+    margin: 65.6px auto;
+}
+
+.your-users-img {
+    width: 244.11px;
+    height: 184.69px;
+    margin: 60px auto 59.31px;
 }
 
 
 /* Footer */
+
+
+
 .attribution {
     font-size: 11px;
     text-align: center;
