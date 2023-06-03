@@ -21,15 +21,17 @@ main {
 
 
 /* Header */
-.header {
-    background-image: url('../images/bg-hero-mobile.svg');
-}
 
 header {
     display: flex;
     align-items: center;
     padding: 24px 16px 0;
     justify-content: space-between;
+}
+
+.header {
+    background-color: hsl(193, 100%, 96%);
+    background-image: url('../images/bg-hero-mobile.svg');
 }
 
 .logo {
@@ -53,14 +55,37 @@ header {
     line-height: 14px;
     font-family: 'Open Sans',
         sans-serif;
+    font-weight: 700;
     margin: 4px 22px 6px 22px;
 }
 
-.hero-container {
-    text-align: center;
-    margin: 80px 36px 36px;
-    font-family: 'Open Sans',
-        sans-serif;
+@media screen and (min-width: 1440px) {
+    .header {
+        background-image: url('../images/bg-hero-desktop.svg');
+    }
+
+    header {
+        padding: 48px 80px 0;
+    }
+
+    .logo {
+        width: 200px;
+        height: 31px;
+    }
+
+    .btn-try-it {
+        width: 200px;
+        height: 48px;
+        border-radius: 24px;
+    }
+
+    .btn-try-it p {
+        font-size: 14px;
+        margin: 14px 64px;
+        line-height: 19px;
+        font-weight: 700;
+        color: hsla(208, 12%, 55%, 1);
+    }
 }
 
 h1 {
@@ -68,6 +93,13 @@ h1 {
     font-weight: 600;
     line-height: 36px;
     font-family: 'Poppins', sans-serif;
+}
+
+.hero-container {
+    text-align: center;
+    margin: 80px 36px 36px;
+    font-family: 'Open Sans',
+        sans-serif;
 }
 
 .hero-content {
@@ -102,6 +134,35 @@ h1 {
     width: 296px;
     height: 209px;
     margin: 56px auto 37px;
+}
+
+@media screen and (min-width: 1440px) {
+    .hero-container {
+        display: flex;
+        justify-content: center;
+        margin: 72px 90px auto;
+        padding-bottom: 72px;
+    }
+
+    .hero-content-wrap {
+        text-align: left;
+        margin-right: 54px;
+        max-width: 536px;
+    }
+
+    .hero-img {
+        width: 680px;
+        height: 482px;
+        margin: 0;
+    }
+
+    h1 {
+        margin-top: 76px;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 60px;
+        font-family: 'Poppins', sans-serif;
+    }
 }
 
 /* content */
@@ -155,6 +216,37 @@ h1 {
     width: 244.11px;
     height: 184.69px;
     margin: 60px auto 59.31px;
+}
+
+@media screen and (min-width: 1440px) {
+    .main-content {
+        padding-top: 160px;
+        padding-bottom: 344px;
+    }
+
+    .content-wrapper {
+        display: flex;
+        align-items: center;
+        min-width: 1232px;
+    }
+
+    .content-area {
+        width: 488px;
+        height: 140px;
+        text-align: left;
+    }
+
+    .content {
+        margin: 16px 0px 0px;
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    /* width: 488px;
+        height: 140px;
+        text-align: left; */
+
+
 }
 
 
