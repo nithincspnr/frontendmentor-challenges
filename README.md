@@ -2,7 +2,7 @@
 This repo contains solutions I created for a few challenges I found on the [Frontendmentor.io](https://www.frontendmentor.io/) website.
 
 
-### The challenges & the solutions
+### The challenges & solutions
 | Sl No.|Challenge | Code     |          |
 | :---- |:-------- | :------- | :------- | 
 | 1.    |[QR code component](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H)|[Solution](https://github.com/nithincspnr/frontendmentor-challenges/tree/main/qr-code-component)| [Demo](https://nithincspnr.github.io/frontendmentor-challenges/qr-code-component/)|

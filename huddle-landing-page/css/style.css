@@ -83,6 +83,10 @@ header {
         margin: 14px 64px;
         line-height: 19px;
         font-weight: 700;
+        color: hsl(192, 100%, 9%);
+    }
+
+    .btn-try-it p:hover {
         color: hsla(208, 12%, 55%, 1);
     }
 }
@@ -122,7 +126,6 @@ h1 {
     background-color: hsl(321, 100%, 80%);
 }
 
-
 .get-started-text {
     color: white;
     font-size: 12px;
@@ -147,6 +150,20 @@ h1 {
         justify-content: center;
         margin: 72px 90px auto;
         padding-bottom: 72px;
+    }
+
+    .hero-container .btn-get-started {
+        width: 280px;
+        height: 56px;
+        margin: 32px 0;
+        border-radius: 28px;
+    }
+
+    .hero-container .get-started-text {
+        font-size: 14px;
+        line-height: 19px;
+        padding-top: 18px;
+        padding-bottom: 18px;
     }
 
     .hero-content-wrap {
