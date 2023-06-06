@@ -152,6 +152,10 @@ h1 {
         padding-bottom: 72px;
     }
 
+    .hero-content {
+        font-size: 18px;
+    }
+
     .hero-container .btn-get-started {
         width: 280px;
         height: 56px;
