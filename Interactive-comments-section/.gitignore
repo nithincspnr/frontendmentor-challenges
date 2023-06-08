@@ -4,6 +4,7 @@
 
 # Avoid design files
 /design
+/node_modules
 
 # Avoid your project being littered with annoying .DS_Store files!
 .DS_Store
