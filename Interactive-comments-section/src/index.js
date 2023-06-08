@@ -1,15 +1,6 @@
+import React from 'react'
+import ReactDOM from 'react-dom';
+
 import './style.scss';
 
-
-function component() {
-    const element = document.createElement('div');
-
-    element.innerHTML = 'Hello world';
-    element.classList.add('hello');
-
-    return element;
-}
-
-console.log(module.hot)
-
-document.body.appendChild(component());
+ReactDOM.render(<div>Hello world from ReactJS</div>, document.getElementById('app'))
