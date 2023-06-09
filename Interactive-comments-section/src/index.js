@@ -1,6 +1,17 @@
 import React from 'react'
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 
-import './style.scss';
+import App from './App';
+import data from '../data.json';
+import * as storage from './utils/local-storage';
 
-ReactDOM.render(<div>Hello world from ReactJS</div>, document.getElementById('app'))
+/**
+ * Load the initial data into local storage
+ */
+(() => {
+    storage.setItem('data', data)
+})();
+
+const root = createRoot(document.getElementById('app'));
+
+root.render(<App />);
