@@ -1,10 +1,10 @@
 import Layout from './layout';
-import CommentBox from './box';
+import Card from './card';
 import Comment from './comment';
 
 
 export {
     Layout,
-    CommentBox,
-    Comment
+    Card,
+    Comment,
 }

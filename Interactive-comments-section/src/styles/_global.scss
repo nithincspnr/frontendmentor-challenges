@@ -1,8 +1,10 @@
-html{
+html {
     box-sizing: border-box;
 }
 
-*, *:after, *:before {
+*,
+*::after,
+*::before {
     box-sizing: inherit;
 
 }
@@ -15,8 +17,8 @@ main {
 
 body {
     min-height: 100vh;
+    background-color: $very_light_gray;
     font-family: 'Rubik', sans-serif;
-    background-color: #ccd4f5;
 }
 
 main {

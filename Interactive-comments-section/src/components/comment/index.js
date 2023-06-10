@@ -1,15 +1,19 @@
-import React from 'react';
+import React from "react";
 
-import Box from '../box';
-
+import { Card } from "components";
+import Avatar from "./avatar";
+import Vote from "./vote";
 
 function Comment({ data }) {
 
     console.log({ data })
-
     return (
-        <Box>{data.content}</Box>
-    )
+        <Card>
+            <Avatar user={data.user} />
+            <p>{data.content}</p>
+            <Vote />
+        </Card>
+    );
 }
 
-export default Comment
+export default Comment;
