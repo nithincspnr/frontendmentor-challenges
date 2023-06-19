@@ -1,1 +1,19 @@
-.vote {}
+.vote {
+    width: 40px;
+    height: 98px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F5F6FA;
+    border-radius: 10px;
+    padding: 6px;
+
+    &__btn {
+        cursor: pointer;
+        padding: 8px;
+    }
+
+    &__score {
+        margin: 8px auto;
+    }
+}

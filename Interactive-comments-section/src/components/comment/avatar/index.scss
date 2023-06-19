@@ -1,0 +1,15 @@
+.avatar {
+    display: flex;
+    align-items: center;
+
+    &__img {
+        height: 32px;
+        width: 32px;
+    }
+
+    &__title {
+        margin-left: 16px;
+        // font-size: 16px;
+        // font-weight: 500;
+    }
+}

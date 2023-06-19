@@ -1,0 +1,27 @@
+.btn {
+    height: 48px;
+    color: white;
+    cursor: pointer;
+    padding: 14px 30px 12px;
+    display: inline-block;
+    border-radius: 8px;
+
+    &-primary {
+        width: 104px;
+        background-color: #5357B6;
+
+        &:hover {
+            background-color: #C5C6EF;
+        }
+    }
+
+    &-success {
+        width: 161px;
+        background-color: #67727E;
+    }
+
+    &-error {
+        width: 161px;
+        background-color: #ED6368;
+    }
+}

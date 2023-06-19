@@ -1,10 +1,14 @@
 import React, { Fragment } from "react";
+import { Avatar as AvatarAssets } from 'assets';
+import './index.scss';
 
 function Avatar({ user }) {
     return (
-        <Fragment>
-            {/* <img src={user.image.png} /> */}{user.username}
-        </Fragment>
+        <div className='avatar'>
+            <img className="avatar__img" src={AvatarAssets[user.username]} />
+            <h2 className="avatar__title">{user.username}
+            </h2>
+        </div>
     );
 }
 
