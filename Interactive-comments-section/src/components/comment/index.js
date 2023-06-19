@@ -4,28 +4,28 @@ import { Card } from "components";
 import Avatar from "./avatar";
 import Vote from "./vote";
 import Button from "../button";
-import Link from "../link";
+import Action from "./action";
 
-import './index.scss';
+import "./index.scss";
 
 function Comment({ data }) {
+  return (
+    <Card>
+      <div className="comment">
+        <div className="comment__header">
+          <Avatar user={data.user} />
+          <p className="comment__created-at">{data.createdAt}</p>
+        </div>
 
-    // cl
+        <p className="comment__content">{data.content}</p>
 
-    return (
-        <Card>
-            <Avatar user={data.user} />
-            <p className="card__content">{data.content}</p>
-            <p></p>
-            {/* <Vote score={data.score} />
-            <Button>SEND</Button>
-            <Button success>NO, CANCEL</Button>
-            <Button error>YES, DELETE</Button>
-            <Link replyLink>Reply</Link>
-            <Link editLink>Edit</Link>
-            <Link deleteLink>Delete</Link> */}
-        </Card>
-    );
+        <div className="comment__action">
+          <Vote score={data.score} />
+          <Action>Reply</Action>
+        </div>
+      </div>
+    </Card>
+  );
 }
 
 export default Comment;

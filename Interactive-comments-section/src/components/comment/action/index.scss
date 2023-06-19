@@ -1,0 +1,16 @@
+@import "../../../styles/colors";
+
+.action {
+    display: flex;
+    align-items: center;
+
+    &__icon {
+        height: 14px;
+    }
+
+    &__text {
+        color: $blue;
+        margin-left: 8px;
+        font-weight: 500;
+    }
+}

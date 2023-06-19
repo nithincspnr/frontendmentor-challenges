@@ -1,19 +1,35 @@
 @import "../../styles/colors";
 
-// VoteBox
-.vote-box {
-    height: 98px;
-    width: 40px;
-    border-radius: 10px;
-    background-color: #F5F6FA;
-}
+.comment {
+    &__header {
+        display: flex;
+        align-items: center;
+    }
 
-// Card
-.card {
+    &__created-at {
+        margin-left: 16px;
+        color: $gray_blue;
+    }
+
     &__content {
         margin-top: 16px;
         font-size: 16px;
         font-weight: 400;
         color: $gray_blue;
     }
+
+    &__action {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 16px;
+    }
+}
+
+// VoteBox
+.vote-box {
+    height: 98px;
+    width: 40px;
+    border-radius: 10px;
+    background-color: #f5f6fa;
 }

@@ -1,8 +1,8 @@
-// @import "colors";
+@import "../../styles/colors";
 
 .card {
     margin: auto 16px 16px;
-    background-color: white;
+    background-color: $white;
     min-width: 343px;
     border-radius: 8px;
     padding: 16px;
