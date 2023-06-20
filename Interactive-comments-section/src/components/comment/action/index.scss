@@ -10,8 +10,15 @@
     }
 
     &__text {
-        color: $blue;
         margin-left: 8px;
         font-weight: 500;
+    }
+
+    &__text-primary {
+        color: $blue;
+    }
+
+    &__text-error {
+        color: $soft_red;
     }
 }

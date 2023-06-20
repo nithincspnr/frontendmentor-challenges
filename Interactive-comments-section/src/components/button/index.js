@@ -1,22 +1,21 @@
-import React from 'react';
-import './index.scss';
+import React from "react";
+import classNames from "classnames";
+import "./index.scss";
 
 function Button(props) {
-    const { onClick, success, error } = props;
-    let className = 'btn';
+  const { onClick, success, error } = props;
+  const className = classNames({
+    btn: true,
+    "btn-success": success,
+    "btn-error": error,
+    "btn-primary": !success && !error,
+  });
 
-    if (success) {
-        className += ' btn-success';
-    }
-    else if (error) {
-        className += ' btn-error';
-    } else {
-        className += ' btn-primary';
-    }
-
-    return (
-        <div className={className} onClick={onClick}>{props.children}</div>
-    )
+  return (
+    <div className={className} onClick={onClick}>
+      {props.children}
+    </div>
+  );
 }
 
 export default Button;

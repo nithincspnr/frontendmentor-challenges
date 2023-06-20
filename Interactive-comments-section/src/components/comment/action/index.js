@@ -1,31 +1,41 @@
 import React from "react";
+import classNames from "classnames";
 
 import "./index.scss";
 import { ReplyIcon, EditIcon, DeleteIcon } from "assets";
 
 const Action = (props) => {
-  const { error, editLink, deleteLink, onClick } = props;
+  const { onClick, type = "reply" } = props;
 
-  let className = "action";
-  if (error) {
-    className += " action-error";
-  } else {
-    className += " action-primary";
-  }
+  const className = classNames({
+    action: true,
+    "action-primary": type === "reply" || type === "edit",
+    "action-error": type === "delete",
+  });
+
+  const textClassName = classNames({
+    action__text: true,
+    "action__text-primary": type === "reply" || type === "edit",
+    "action__text-error": type === "delete",
+  });
 
   let icon = null;
-  if (deleteLink) {
-    icon = <img src={DeleteIcon} />;
-  } else if (editLink) {
-    icon = <img src={EditIcon} />;
-  } else {
-    icon = <img src={ReplyIcon} />;
+  switch (type) {
+    case "delete":
+      icon = <img src={DeleteIcon} />;
+      break;
+    case "edit":
+      icon = <img src={EditIcon} />;
+      break;
+    default:
+      icon = <img src={ReplyIcon} />;
+      break;
   }
 
   return (
     <div onClick={onClick} className={className}>
       {icon}
-      <p className="action__text">{props.children}</p>
+      <p className={textClassName}>{props.children}</p>
     </div>
   );
 };

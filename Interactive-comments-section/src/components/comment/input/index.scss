@@ -1,0 +1,31 @@
+@import "../../../styles/colors";
+.input-box {
+    display: flex;
+
+    &__avatar {
+        height: 40px;
+        width: 40px;
+    }
+
+    &__textarea {
+        width: 100%;
+        resize: none;
+        outline: none;
+        min-height: 96px;
+        margin-left: 16px;
+        border-radius: 8px;
+        padding: 12px 24px 0;
+        border: 1px solid $light_gray;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: "Rubik", sans-serif;
+
+        &:focus-visible {
+            border: 1px solid $blue;
+        }
+    }
+
+    &__btn {
+        margin-left: 16px;
+    }
+}

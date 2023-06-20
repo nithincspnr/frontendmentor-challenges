@@ -1,6 +1,6 @@
-import React, { Fragment } from "react";
-import { Avatar as AvatarAssets } from "assets";
+import React from "react";
 import "./index.scss";
+import { Avatar as AvatarAssets } from "assets";
 
 const User = ({ username }) => {
   return (

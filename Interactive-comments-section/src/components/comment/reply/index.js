@@ -10,7 +10,7 @@ const Reply = ({ replies }) => {
   return (
     <div className="reply">
       <div className="reply__vertical-line"></div>
-      <div>
+      <div style={{ width: "100%" }}>
         {replies.map((reply, index) => (
           <Comment key={index} data={reply} />
         ))}

@@ -6,6 +6,13 @@
         align-items: center;
     }
 
+    &__action-btn {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        margin-left: auto;
+    }
+
     &__created-at {
         margin-left: 16px;
         color: $gray_blue;
