@@ -1,0 +1,11 @@
+@import "../../../styles/colors";
+
+.reply {
+    display: flex;
+
+    &__vertical-line {
+        border: 2px solid $light_gray;
+        margin-left: 16px;
+        margin-bottom: 16px;
+    }
+}

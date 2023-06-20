@@ -1,5 +1,5 @@
 import Layout from "./layout";
 import Card from "./card";
-import Comment from "./comment";
+import Comment, { Reply } from "./comment";
 
-export { Layout, Card, Comment };
+export { Layout, Card, Comment, Reply };
