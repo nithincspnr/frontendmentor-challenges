@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 
 import User from "./user";
 import Vote from "./vote";
@@ -10,6 +10,9 @@ import { Card } from "components";
 import "./index.scss";
 
 const Comment = ({ data }) => {
+  const [showReplyInput, setShowReplyInput] = useState(false);
+  const onReply = () => setShowReplyInput(!showReplyInput);
+
   return (
     <Fragment>
       <Card>
@@ -25,12 +28,11 @@ const Comment = ({ data }) => {
           <p className="comment__content">{data.content}</p>
           <div className="comment__action">
             <Vote score={data.score} />
-            <Action>Reply</Action>
+            <Action onClick={onReply}>Reply</Action>
           </div>
         </div>
       </Card>
-      {/* Reply Input box */}
-      <InputBox />
+      {showReplyInput ? <InputBox /> : null}
     </Fragment>
   );
 };
