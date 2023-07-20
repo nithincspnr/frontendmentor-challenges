@@ -1,5 +1,5 @@
-## My Solutions for Frontend mentor challenges
-This repo contains solutions I created for a few challenges I found on the [Frontendmentor.io](https://www.frontendmentor.io/) website.
+## Frontend mentor challenges
+This repo contains solutions that I have created for a few challenges from the [Frontendmentor.io](https://www.frontendmentor.io/) website.
 
 
 ### The challenges & solutions

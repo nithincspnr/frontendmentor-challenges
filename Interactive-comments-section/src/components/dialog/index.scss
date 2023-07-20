@@ -1,0 +1,31 @@
+.dialog-box-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dialog-box {
+    width: 400px;
+    height: 252px;
+    background: white;
+    position: absolute;
+    border-radius: 8px;
+    padding: 32px;
+
+    &__title {
+        padding: 0;
+        font-size: 20px;
+    }
+
+    &__content {
+        color: #67727e;
+        margin: 20px 0;
+    }
+
+    &__btn-group {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+}
