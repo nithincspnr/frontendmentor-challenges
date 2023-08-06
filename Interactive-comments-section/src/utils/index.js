@@ -1,3 +1,5 @@
 import { getItem, setItem } from "./local-storage";
 
-export { getItem, setItem };
+const uniqueId = () => (Math.random() + 1).toString(36).substring(7);
+
+export { getItem, setItem, uniqueId };

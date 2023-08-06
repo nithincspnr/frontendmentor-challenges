@@ -7,10 +7,11 @@ import Reply from "./reply";
 import Action from "./action";
 import InputBox from "./input";
 import { Card } from "components";
-import { CommentDispatchContext } from "context";
 import ConfirmationDialog from "../dialog";
+import { CommentDispatchContext } from "context";
+import appData from "../../../data.json";
 
-const Comment = ({ data }) => {
+const Comment = ({ data, commentId }) => {
   const dispatch = useContext(CommentDispatchContext);
   const [showReplyInput, setShowReplyInput] = useState(false);
   const [showDeleteConfirmation, setShowDeleteConfirmation] = useState(false);
@@ -36,12 +37,14 @@ const Comment = ({ data }) => {
           <div className="comment__header">
             <User username={data.user.username} />
             <p className="comment__created-at">{data.createdAt}</p>
-            <div className="comment__action-btn">
-              <Action type="delete" onClick={onDeleteClick}>
-                Delete
-              </Action>
-              <Action type="edit">Edit</Action>
-            </div>
+            {appData.currentUser.username === data.user.username ? (
+              <div className="comment__action-btn">
+                <Action type="delete" onClick={onDeleteClick}>
+                  Delete
+                </Action>
+                <Action type="edit">Edit</Action>
+              </div>
+            ) : null}
           </div>
           <p className="comment__content">{data.content}</p>
           <div className="comment__action">
@@ -50,7 +53,9 @@ const Comment = ({ data }) => {
           </div>
         </div>
       </Card>
-      {showReplyInput ? <InputBox /> : null}
+      {showReplyInput ? (
+        <InputBox commentId={commentId} onInput={onReply} />
+      ) : null}
       <ConfirmationDialog
         open={showDeleteConfirmation}
         onCancel={closeDialog}
@@ -60,6 +65,6 @@ const Comment = ({ data }) => {
   );
 };
 
-export { Reply };
+export { Reply, InputBox };
 
 export default Comment;
