@@ -19,3 +19,7 @@ Features:
 - Sass for CSS & styling
 
 The data is stored in Json file, once the app is loaded everything is managed from the app reducer.
+
+## Development
+
+For development first create a `dist` folder in the root and move the [`index.html`](./index.html) file into this `dist` folder.
